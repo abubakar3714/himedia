@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="website Icon" type="png" href="./hi.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HI Interprises</title><link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <header class="header" id="navigation-menu">
+        <nav class="navbar">
+         <div class="logo">
+             <img style="width: 100px; height: 60px;" src="./hi.jpg" alt="">
+         </div>
+          <ul class="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#design">Design</a></li>
+            <li><a href="#more-about">Quality</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="./fire.html">Login</a></li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+    </header>
+    
+
+    <div id="home">
+            <h1  data-aos="fade-right">Register and get free Tameplates...</h1>
+            <h2>Register and get free Tameplates...</h2>
+            <p align="center"><a href="../js-basics/fire.html"><button >Register</button></a></p>
+    </div>
+    <div id="about">
+        <h1>About</h1>
+        <div class="in-about">
+            <div data-aos="fade-left" class="in-about-left">
+                <img  data-aos="fade-right" src="./IMG_2318.JPG">
+            </div>
+                <div class="in-about-right">
+                    <h3>Working To Build a better web Desing</h3>
+                    <p>We offer Design companies typically offer a range of services tailored to their expertise. These can include graphic design (logos, branding, marketing materials), web design and development, UX/UI design, industrial design, architectural design, interior design, fashion design, and more.</p>
+                     
+                </div>
+        </div>
+       
+    <div id="design">
+        <h1>Design</h1>
+        <div class="slider">
+            <div class="slides">
+                <div id="image-1" class="slide first">
+                    <img src="./11.jpg" alt="">
+                </div>
+                <div id="image-2" class="slide">
+                    <img src="./23.jpg" alt="">
+                </div>
+                <div id="image-3" class="slide">
+                    <img src="./4.jpg" alt="">
+                </div>
+                <div id="image-4" class="slide">
+                    <img src="./6.jpg" alt="">
+                </div>
+                <div id="image-5" class="slide">
+                    <img src="./12.jpg" alt="">
+                </div>
+                <div id="image-6" class="slide">
+                    <img src="./16.jpg" alt="">
+                </div>
+            </div>
+            <div class="navigation-manual">
+                <a href="#image-1"><label for="radio1" class="manual-btn"></label></a>
+                <a href="#image-2"><label for="radio2" class="manual-btn"></label></a>
+                <a href="#image-3"><label for="radio3" class="manual-btn"></label></a>
+                <a href="#image-4"><label for="radio4" class="manual-btn"></label></a>
+                <a href="#image-5"><label for="radio5" class="manual-btn"></label></a>
+                <a href="#image-6"><label for="radio6" class="manual-btn"></label></a>
+            </div>
+        </div>
+    </div>
+    <div id="more-about">
+        <h1>Our Quality</h1>
+        <div class="in-more-about">
+            <div class="box"><h2> More about Hi Creative</h2>
+                <p>We are good in including designers (graphic designers, web designers, interior designers, etc.), project managers, marketers, developers (for web and software projects), and administrative staff. </p>
+            </div>
+            <div class="box"><h2> Why to Choose us</h2>
+                <p>We can understanding the client's needs and objectives, conducting research and analysis, generating ideas and concepts, refining designs through iterative feedback loops, and delivering final products or solutions.</p>
+            </div>
+            <div class="box"><h2> What We do</h2>
+                <p>These can include Adobe Creative Suite (Photoshop, Illustrator, InDesign), Sketch, Figma, AutoCAD, 3ds Max, and other specialized software depending on the design niche.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div id="contact">
+        <h1>Contact Us</h1>
+        <div class="incontact">
+            <div class="left">
+                <a href="Tel:08160528863"><img src="./call.png" alt=""></a>
+                <h2>Call</h2>
+            </div>
+            <div class="middle">
+                <a href="mailto:hayim444@gmail.com"><img src="./email.png" alt=""></a>
+                <h2>Email</h2>
+            </div>
+            <div class="right">
+                <a href="https://wa.me/message/7MMB74LJLRTWB1"><img src="./watsapp.png" alt=""></a>
+                <h2>Watsapp</h2>
+            </div>
+        </div>
+        <div class="developer">
+            <a href="https://wa.me/message/7MMB74LJLRTWB1">CONTACT DEVELOPERS</a>
+        </div>
+    </div>
+
+    
+    
+    
+    <div onclick="scrollToTop()" class="scrollTop">Top</div>
+
+
+    <script>
+        const burger = document.getElementById('burger');
+        const navLinks = document.getElementById('navLinks');
+        burger.addEventListener('click', () => { navLinks.classList.toggle('active'); });
+
+        function scrollToTop(){
+            window.scrollTo(0,0)
+        }
+    </script>
+
+    
+<script>
+    const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+hamburger.classList.toggle("active");
+navMenu.classList.toggle("active");
+}
+const navLink = document.querySelectorAll(".nav-link");
+
+navLink.forEach((n) => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+hamburger.classList.remove("active");
+navMenu.classList.remove("active");
+}
+
+</script>
+</body>
+</html>
